@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'the_daily_brief/home'
+
+  get 'the_daily_brief/top_stories'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
