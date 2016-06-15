@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'the_daily_brief#home'
 
-  get 'the_daily_brief/top_stories'
+  get 'top_stories' => 'the_daily_brief#top_stories'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

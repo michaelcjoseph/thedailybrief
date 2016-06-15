@@ -1,0 +1,15 @@
+<header id="header" class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="logo">
+        <%= link_to image_tag("http://lapa.ninja/img/lapa-logo.svg", alt: "LongForm.News logo"), root_path %>
+      </div>
+      <nav>
+      	<ul class="nav navbar-nav navbar-right">
+	        <li><%= link_to "Home", root_path %></li>
+	        <li><%= link_to "Top Stories", top_stories_path %></li>
+      	</ul>
+      </nav>
+    </div>
+  </div>
+</header>
