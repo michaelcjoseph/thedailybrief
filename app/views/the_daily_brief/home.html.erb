@@ -1,2 +1,21 @@
 <h1>The Daily Brief</h1>
 <p>Your source to find the best stories on the internet</p>
+
+<section id="news-container">
+  <% @articles.each do |i| %>
+    <div class="pin col-md-12">
+      <a href=<%= i.web_url %> target="_blank">
+        <div class="article-image col-md-3">
+          <% if i.image_url.length > 0 %>
+            <%= image_tag(i.image_url, alt: "Article Image") %>
+          <% end %>
+        </div>
+        <div class="article-text col-md-9">
+          <h2 class="article-title"><%= i.title %></h2>
+          <p class="article-source"><%= i.source %> | <%= i.date %></p>
+          <p class="article-desc"><%= i.snippet %></p>
+        </div>
+      </a>
+    </div>
+  <% end %>
+</section>

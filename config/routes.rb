@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'articles/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,6 +9,8 @@ Rails.application.routes.draw do
   root 'the_daily_brief#home'
 
   get 'top_stories' => 'the_daily_brief#top_stories'
+
+  resources :articles
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
